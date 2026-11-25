@@ -78,7 +78,7 @@ button:focus-visible,a:focus-visible,input:focus,select:focus,textarea:focus,.de
 <script id="boot" type="application/json">{"drop": "DROP 03 · HOME TERRAIN", "opensAt": "2026-11-23T10:00:00+07:00", "closesAt": "2026-11-26T23:59:59+07:00", "shipping": 50, "sizes": ["XS", "S", "M", "L", "XL", "2XL"], "products": [{"id": "short", "name": "เสื้อแขนสั้น", "price": 490}, {"id": "long", "name": "เสื้อแขนยาว", "price": 590}]}</script>
 <script>
 'use strict';
-const API='https://script.google.com/macros/s/AKfycbyscKGfjWXjpuH-9U3s5ncj94o2rscl84YjH9I8cmrNOXkMbhqFAY10AD1a93lp1kWs7Q/exec';
+const API='https://script.google.com/macros/s/AKfycbzmW5gCbjkgb9WW64nvw2EuOn9tnsGT2aypeyP0ELZQiebHyEPaCUdh3Sec8RenOwFCcw/exec';
 const CONFIG=JSON.parse(document.getElementById('boot').textContent);
 CONFIG.accepting=Date.now()>=Date.parse(CONFIG.opensAt)&&Date.now()<=Date.parse(CONFIG.closesAt);
 const $=id=>document.getElementById(id);
