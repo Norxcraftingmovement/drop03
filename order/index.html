@@ -89,9 +89,54 @@ button:focus-visible,a:focus-visible,input:focus,select:focus,textarea:focus,.de
 @media(min-width:781px){.gallery.g2{grid-template-columns:repeat(4,minmax(0,1fr))}.gallery.g2 figure{grid-column:auto}}
 .size-note{border:1px dashed #3a3a3a;border-radius:6px;padding:18px;margin-bottom:36px}
 @media(max-width:780px){.cards{grid-template-columns:1fr}.hub-hero{padding:28px 0 18px}}
+
+/* ===== ธีมตามหน้า: หน้ารวม/ตะกร้า = ดำ–ขาว–เทา · Drop 02 = กระดาษขาวกริดบาง · Drop 03 = ดำ–ส้มเดิม ===== */
+body.theme-mono .btn,body.theme-mono .hero-actions .btn:not(.alt),body.theme-mono .cart .btn{background:#f5f5f5;color:#191919;border-color:#f5f5f5}
+body.theme-mono .btn.alt{background:transparent;color:#f5f5f5;border-color:#8a8a8a}
+body.theme-mono .notice{border-left-color:#f5f5f5}
+body.theme-mono .card:hover{border-color:#a8a8a8}
+body.theme-mono .status,body.theme-mono .test-note{background:#262626;border-color:#5a5a5a;color:#e6e6e6}
+body.theme-mono .delivery-choice:has(input:checked){background:#2b2b2b;border-color:#f5f5f5}
+body.theme-mono .delivery-choice input,body.theme-mono input[type=checkbox]{accent-color:#f5f5f5}
+body.theme-mono .payment .btn.light{background:#f5f5f5;color:#191919;border-color:#f5f5f5}
+body.theme-mono .muted,body.theme-mono .caption,body.theme-mono .small.muted,body.theme-mono .delivery-choice small{color:#b5b5b5}
+body.theme-mono button:focus-visible,body.theme-mono a:focus-visible,body.theme-mono input:focus,body.theme-mono textarea:focus{outline-color:#f5f5f5}
+
+body.theme-paper{color-scheme:light;color:#181818;background-color:#fff;background-image:linear-gradient(rgba(0,0,0,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.045) 1px,transparent 1px);background-size:32px 32px}
+body.theme-paper .topbar{background:#fff;color:#181818;border-bottom:1px solid #d9d9d9}
+body.theme-paper .wordmark .logo-mark{background:#191919;padding:6px;border-radius:2px}
+body.theme-paper .cart-btn{color:#181818}
+body.theme-paper h1,body.theme-paper h2,body.theme-paper h3,body.theme-paper .steps,body.theme-paper .lead,body.theme-paper .eyebrow{color:#181818}
+body.theme-paper .muted,body.theme-paper .caption,body.theme-paper .small.muted,body.theme-paper .back,body.theme-paper .delivery-choice small,body.theme-paper .empty{color:#5c5c5c}
+body.theme-paper .btn,body.theme-paper .hero-actions .btn:not(.alt),body.theme-paper .cart .btn{background:#181818;color:#fff;border-color:#181818;border-radius:0}
+body.theme-paper .btn.alt{background:#fff;color:#181818;border-color:#181818}
+body.theme-paper .pill{border-color:#181818}
+body.theme-paper .notice{border-left:2px solid #181818;background:#f7f7f7;padding:14px 16px;color:#333}
+body.theme-paper .timeline,body.theme-paper .foot{border-color:#d9d9d9}
+body.theme-paper .hero-image{background:#fafafa;border:1px solid #d9d9d9;border-radius:0}
+body.theme-paper .gallery img{border-radius:0}
+body.theme-paper .size-box,body.theme-paper .panel{background:#fff;border-color:#cfcfcf;border-radius:0}
+body.theme-paper th{background:#f1f1f1}body.theme-paper th,body.theme-paper td{border-bottom-color:#e0e0e0}
+body.theme-paper .qty-label{border-bottom-color:#e5e5e5}
+body.theme-paper .qty-btn{background:#fff;color:#181818;border-color:#181818}
+body.theme-paper .qty-label .qty-stepper input,body.theme-paper .qty-label .qty-stepper input[readonly]{background:#fff;color:#181818;border-color:#9a9a9a}
+body.theme-paper .panel input:not([type=radio]):not([type=checkbox]),body.theme-paper .panel textarea{background:#fff;color:#181818;border-color:#9a9a9a}
+body.theme-paper .panel input::placeholder,body.theme-paper .panel textarea::placeholder{color:#8a8a8a}
+body.theme-paper .delivery-choice{border-color:#cfcfcf;background:#fff}body.theme-paper .delivery-choice:has(input:checked){background:#f1f1f1;border-color:#181818}
+body.theme-paper .delivery-choice input,body.theme-paper input[type=checkbox]{accent-color:#181818}
+body.theme-paper .cart-item{border-bottom-color:#e0e0e0}body.theme-paper .total{border-top-color:#d0d0d0}
+body.theme-paper .status,body.theme-paper .test-note{background:#f4f4f4;border:1px dashed #9a9a9a;color:#333}
+body.theme-paper .error{background:#fff0ee;color:#8c2f23;border-color:#c98c80}
+body.theme-paper .link-btn{color:#555}
+body.theme-paper .payment{background:#181818;color:#fff;border:0;border-radius:0}
+body.theme-paper .payment .btn.light{background:#fff;color:#181818;border-color:#fff}
+body.theme-paper .payment h2,body.theme-paper .payment .eyebrow{color:#fff}
+body.theme-paper .mobile-summary{background:#181818;border-top:0}body.theme-paper .mobile-summary a{background:#fff;color:#181818}
+body.theme-paper button:focus-visible,body.theme-paper a:focus-visible,body.theme-paper input:focus,body.theme-paper textarea:focus{outline-color:#181818}
+body.theme-paper .foot{background:#fff}
 </style>
 </head>
-<body>
+<body class="theme-mono">
 <header class="topbar"><div class="wrap topline"><a class="wordmark" href="./" data-internal><img class="logo-mark" src="./assets/logo.png" alt="NORX Crafting Movement" width="66" height="60"></a><a class="cart-btn" href="./cart/" data-internal>ตะกร้า (<span data-cart-count>0</span>)</a></div></header>
 <main class="wrap" id="top">
 <section class="hub-hero"><p class="eyebrow">ROOTED IN CHIANG RAI.</p><h1>เลือกเสื้อ<br>ที่เป็นคุณ.</h1><p class="lead">กดดูแต่ละรุ่น เลือกไซส์และจำนวน แล้วสั่งรวมในตะกร้าเดียว โอนครั้งเดียว</p><p class="pill" data-open-badge style="display:inline-block;margin-top:14px">PREORDER</p><div id="testNote" class="test-note small" hidden style="margin-top:14px">โหมดทดสอบ · ออเดอร์นี้ไม่ใช่ออเดอร์จริง</div></section>
